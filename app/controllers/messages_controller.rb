@@ -13,7 +13,7 @@ class MessagesController < ApplicationController
       redirect_to room_messages_path(@room)
     else
       @messaages=@room.messages.includes(:user)
-      render :ndex
+      render :index
     end
   end
     
